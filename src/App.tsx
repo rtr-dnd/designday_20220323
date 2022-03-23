@@ -1,24 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { useScrollData } from 'scroll-data-hook';
 import './App.css';
 
 function App() {
+  const [scaleVal, setScaleVal] = useState(0)
+
+  const {
+    scrolling,
+    time,
+    speed,
+    direction,
+    position,
+    relativeDistance,
+    totalDistance
+  } = useScrollData();
+
+  const increment = () => {
+    setScaleVal(scaleVal + 1)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='wrap'>
+        <div className='filtered'></div>
+      </div>
+      <svg className='svg'>
+        <filter id="displacement">
+          <feImage xlinkHref="/text.png" result="textImage"/>
+          {/* <feTurbulence type="turbulence" baseFrequency="0.05"
+            numOctaves="2" result="turbulence"/> */}
+          <feDisplacementMap in2="textImage" in="SourceGraphic" scale={speed.y / 30} 
+            xChannelSelector="R" yChannelSelector="G"/>
+        </filter>
+      </svg>
     </div>
   );
 }

@@ -2,9 +2,31 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.svg {
+  position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+
+.wrap {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.filtered {
+  margin-left: -5vw;
+  width: 110vw;
+  height: 300vh;
+  background: repeating-linear-gradient(
+  0deg,
+  #ffffff,
+  #ffffff 10px,
+  #555555 10px,
+  #555555 20px
+);
+  filter: url('#displacement');
 }
 
 @media (prefers-reduced-motion: no-preference) {
