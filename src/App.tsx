@@ -26,7 +26,7 @@ function App() {
       </div>
       <svg className='svg'>
         <filter id="displacement">
-          <feImage xlinkHref="/text.png" result="textImage"/>
+          <feImage xlinkHref="/designday_20220323/text.png" result="textImage"/>
           {/* <feTurbulence type="turbulence" baseFrequency="0.05"
             numOctaves="2" result="turbulence"/> */}
           <feDisplacementMap in2="textImage" in="SourceGraphic" scale={speed.y / 30} 
