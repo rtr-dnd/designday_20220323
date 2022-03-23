@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/designday_20220323/static/css/main.0d1bb129.css",
-    "main.js": "/designday_20220323/static/js/main.f8104e8b.js",
+    "main.js": "/designday_20220323/static/js/main.ad4e0b1a.js",
     "static/js/787.2e3f560a.chunk.js": "/designday_20220323/static/js/787.2e3f560a.chunk.js",
     "index.html": "/designday_20220323/index.html",
     "main.0d1bb129.css.map": "/designday_20220323/static/css/main.0d1bb129.css.map",
-    "main.f8104e8b.js.map": "/designday_20220323/static/js/main.f8104e8b.js.map",
+    "main.ad4e0b1a.js.map": "/designday_20220323/static/js/main.ad4e0b1a.js.map",
     "787.2e3f560a.chunk.js.map": "/designday_20220323/static/js/787.2e3f560a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0d1bb129.css",
-    "static/js/main.f8104e8b.js"
+    "static/js/main.ad4e0b1a.js"
   ]
 }
