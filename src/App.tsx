@@ -30,7 +30,7 @@ function App() {
           {/* <feTurbulence type="turbulence" baseFrequency="0.05"
             numOctaves="2" result="turbulence"/> */}
           <feDisplacementMap in2="textImage" in="SourceGraphic" scale={speed.y / 30} 
-            xChannelSelector="R" yChannelSelector="G"/>
+            xChannelSelector="R"/>
         </filter>
       </svg>
     </div>

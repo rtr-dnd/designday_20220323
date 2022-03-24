@@ -20,10 +20,10 @@
   width: 110vw;
   height: 300vh;
   background: repeating-linear-gradient(
-  0deg,
+  90deg,
   #ffffff,
-  #ffffff 10px,
-  #555555 10px,
+  #ffffff 4px,
+  #555555 4px,
   #555555 20px
 );
   filter: url('#displacement');
